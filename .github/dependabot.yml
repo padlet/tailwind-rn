@@ -1,0 +1,17 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  allow:
+  - dependency-name: tailwindcss
+    dependency-type: direct
+  ignore:
+  - dependency-name: tailwindcss
+    versions:
+    - 2.0.3
+    - 2.0.4
+    - 2.1.0
+    - 2.1.1
